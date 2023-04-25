@@ -7,5 +7,5 @@ class Drink {
     required this.name,
     required this.price,
     required this.imagePath
-  })
+  });
 }
