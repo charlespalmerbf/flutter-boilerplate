@@ -18,7 +18,7 @@ class BottomNavBar extends StatelessWidget {
         gap: 8,
         tabs: const [
           GButton(icon: Icons.home, text: 'Shop'),
-          GButton(icon: Icons.home, text: 'Shop')
+          GButton(icon: Icons.shopping_bag, text: 'Cart')
       ]),
     );
   }
