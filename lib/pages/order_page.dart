@@ -64,6 +64,12 @@ class _OrderPageState extends State<OrderPage> {
                 Container(width: 100, child: const Text('Pearls')),
                 Expanded(child: Slider(value: pearlValue, label: pearlValue.toString(), divisions: 4, onChanged: (value) => customizePearl(value)))
               ],),
+            ),
+
+            MaterialButton(
+              child: Text('Add to cart', style: TextStyle(color: Colors.white)),
+              color: Colors.brown,
+              onPressed: () {},
             )
           ],
         )
