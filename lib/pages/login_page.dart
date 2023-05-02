@@ -24,11 +24,11 @@ class LoginPage extends StatelessWidget {
 
             const SizedBox(height: 25),
 
-            TextInput(controller: usernameController, hintText: '', obscureText: false),
+            TextInput(controller: usernameController, hintText: 'Username', obscureText: false),
 
             const SizedBox(height: 10),
 
-            TextInput(controller: passwordController, hintText: '', obscureText: true),
+            TextInput(controller: passwordController, hintText: 'Password', obscureText: true),
           ]),
         ),
       ),
