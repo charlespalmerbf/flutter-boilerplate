@@ -24,6 +24,7 @@ class _ShopPageState extends State<ShopPage> {
                 padding: const EdgeInsets.all(25.0),
                 child: Column(children: [
                   const Text("Bubble Tea Shop", style: TextStyle(fontSize: 20)),
+                  const SizedBox(height: 10),
                   Expanded(
                       child: ListView.builder(
                           itemCount: value.shop.length,
