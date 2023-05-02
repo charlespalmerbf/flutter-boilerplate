@@ -14,9 +14,10 @@ class MyApp extends StatelessWidget  {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create: (context) => BubbleTeaShop(),
-      builder: (context, child) => const MaterialApp(
+      builder: (context, child) => MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: HomePage(),
+        theme: ThemeData(primarySwatch: Colors.brown),
+        home: const HomePage(),
       ),
     );
   }
