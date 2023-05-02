@@ -1,5 +1,7 @@
 import 'package:bubble_tea/models/drink.dart';
+import 'package:bubble_tea/models/shop.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class OrderPage extends StatefulWidget {
   final Drink drink;
@@ -31,6 +33,16 @@ class _OrderPageState extends State<OrderPage> {
     setState(() {
       pearlValue = newValue;
     });
+  }
+
+  void addToCart() {
+    Provider.of<BubbleTeaShop>(context, listen: false).addToCart(widget.drink);
+
+    Navigator.pop(context);
+
+    showDialog(context: context, builder: (context) => const AlertDialog(
+      title: Text('Successfully added to cart!'),
+    ));
   }
 
   @override
