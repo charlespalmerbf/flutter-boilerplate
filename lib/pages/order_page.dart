@@ -45,7 +45,7 @@ class _OrderPageState extends State<OrderPage> {
             Padding(
               padding: const EdgeInsets.all(15.0),
               child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-                const Text('Sweetness'),
+                Container(width: 100, child: const Text('Sweetness')),
                 Expanded(child: Slider(value: sweetValue, label: sweetValue.toString(), divisions: 4, onChanged: (value) => customizeSweet(value)))
               ],),
             ),
@@ -53,7 +53,7 @@ class _OrderPageState extends State<OrderPage> {
             Padding(
               padding: const EdgeInsets.all(15.0),
               child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-                const Text('Ice'),
+                Container(width: 100, child: const Text('Ice')),
                 Expanded(child: Slider(value: iceValue, label: iceValue.toString(), divisions: 4, onChanged: (value) => customizeIce(value)))
               ],),
             ),
@@ -61,7 +61,7 @@ class _OrderPageState extends State<OrderPage> {
             Padding(
               padding: const EdgeInsets.all(15.0),
               child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-                const Text('Pearls'),
+                Container(width: 100, child: const Text('Pearls')),
                 Expanded(child: Slider(value: pearlValue, label: pearlValue.toString(), divisions: 4, onChanged: (value) => customizePearl(value)))
               ],),
             )
