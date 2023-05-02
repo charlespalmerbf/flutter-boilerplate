@@ -1,4 +1,5 @@
 import 'package:bubble_tea/components/primary_button.dart';
+import 'package:bubble_tea/components/sso_tile.dart';
 import 'package:bubble_tea/components/text_field.dart';
 import 'package:flutter/material.dart';
 
@@ -69,7 +70,13 @@ class LoginPage extends StatelessWidget {
                   ))
                 ],
               ),
-            )
+            ),
+
+            Row(children: [
+              SSOTile(imagePath: 'lib/images/google.png'),
+
+              SSOTile(imagePath: 'lib/images/apple.png'),
+            ],)
           ]),
         ),
       ),
