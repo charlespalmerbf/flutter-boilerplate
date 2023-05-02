@@ -1,3 +1,4 @@
+import 'package:bubble_tea/components/primary_button.dart';
 import 'package:bubble_tea/components/text_field.dart';
 import 'package:flutter/material.dart';
 
@@ -42,10 +43,10 @@ class LoginPage extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(height: 10),
+            const SizedBox(height: 25),
 
+            const PrimaryButton(),
 
-            
           ]),
         ),
       ),
