@@ -29,7 +29,7 @@ class _ShopPageState extends State<ShopPage> {
                           itemCount: value.shop.length,
                           itemBuilder: (context, index) {
                             Drink individualDrink = value.shop[index];
-                            return DrinkTile(drink: individualDrink, onTap: () => goToOrderPage(individualDrink));
+                            return DrinkTile(drink: individualDrink, trailing: const Icon(Icons.arrow_forward), onTap: () => goToOrderPage(individualDrink));
                           }))
                 ]),
               ),
