@@ -3,10 +3,12 @@ import 'package:bubble_tea/components/text_field.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+  LoginPage({super.key});
 
   final usernameController = TextEditingController();
   final passwordController = TextEditingController();
+
+  void signUserIn() {}
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +47,9 @@ class LoginPage extends StatelessWidget {
 
             const SizedBox(height: 25),
 
-            const PrimaryButton(),
+            PrimaryButton(onTap: signUserIn),
+
+            const SizedBox(height: 50),
 
           ]),
         ),
