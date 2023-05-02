@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 
 class TextInput extends StatelessWidget {
-  const TextInput({super.key});
+  final controller;
+  final String hintText;
+  final bool obscureText;
+
+  const TextInput({super.key, required this.controller, required this.hintText, required this.obscureText});
 
   @override
   Widget build(BuildContext context) {
