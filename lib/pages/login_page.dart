@@ -72,8 +72,14 @@ class LoginPage extends StatelessWidget {
               ),
             ),
 
-            Row(children: [
+            const SizedBox(height: 50),
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: const [
               SSOTile(imagePath: 'lib/images/google.png'),
+
+              SizedBox(width: 25),
 
               SSOTile(imagePath: 'lib/images/apple.png'),
             ],)
