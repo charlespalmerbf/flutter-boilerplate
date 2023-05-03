@@ -16,23 +16,16 @@ class _LoginPageState extends State<LoginPage> {
 
   final passwordController = TextEditingController();
 
-  void wrongEmailMessage() {
+  void showErrorMessage(String message) {
     showDialog(
         context: context,
         builder: (context) {
-          return const AlertDialog(
-            title: Text('This email is not in use.',
-                style: TextStyle(fontSize: 12)),
-          );
-        });
-  }
-
-  void wrongPasswordMessage() {
-    showDialog(
-        context: context,
-        builder: (context) {
-          return const AlertDialog(
-            title: Text('Incorrect Password', style: TextStyle(fontSize: 12)),
+          return AlertDialog(
+            backgroundColor: Colors.brown[200],
+            title: Center(
+              child: Text(message,
+                  style: const TextStyle(fontSize: 12, color: Colors.white)),
+            ),
           );
         });
   }
@@ -53,11 +46,7 @@ class _LoginPageState extends State<LoginPage> {
       Navigator.pop(context);
     } on FirebaseAuthException catch (e) {
       Navigator.pop(context);
-      if (e.code == 'user-not-found') {
-        wrongEmailMessage();
-      } else if (e.code == 'wrong-password') {
-        wrongPasswordMessage();
-      }
+      showErrorMessage(e.code);
     }
   }
 
