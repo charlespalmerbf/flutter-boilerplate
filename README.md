@@ -25,9 +25,8 @@ Project Structure
 
 This project follows the standard Flutter project structure, with a few additions to help you get started quickly:
 
-bashCopy code
-
-`.
+```
+.
 ├── lib/                      # Contains the main application code
 │   ├── models/               # Data models used in the app
 │   ├── screens/              # App screens/pages
@@ -41,7 +40,8 @@ bashCopy code
 ├── ios/                      # iOS specific files
 ├── android/                  # Android specific files
 ├── pubspec.yaml              # Flutter project configuration file
-└── README.md                 # This file`
+└── README.md                 # This file
+```
 
 Included Packages
 -----------------
