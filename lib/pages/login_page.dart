@@ -90,7 +90,10 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
               const SizedBox(height: 25),
-              PrimaryButton(onTap: signUserIn),
+              PrimaryButton(
+                onTap: signUserIn,
+                buttonText: 'Sign In',
+              ),
               const SizedBox(height: 50),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 25.0),
