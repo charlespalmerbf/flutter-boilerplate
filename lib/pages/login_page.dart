@@ -1,6 +1,7 @@
 import 'package:bubble_tea/components/primary_button.dart';
 import 'package:bubble_tea/components/sso_tile.dart';
 import 'package:bubble_tea/components/text_field.dart';
+import 'package:bubble_tea/services/auth_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -122,10 +123,15 @@ class _LoginPageState extends State<LoginPage> {
               const SizedBox(height: 50),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
-                  SSOTile(imagePath: 'lib/images/google.png'),
-                  SizedBox(width: 25),
-                  SSOTile(imagePath: 'lib/images/apple.png'),
+                children: [
+                  SSOTile(
+                      imagePath: 'lib/images/google.png',
+                      onTap: () => AuthService().signInWithGoogle()),
+                  const SizedBox(width: 25),
+                  SSOTile(
+                    imagePath: 'lib/images/apple.png',
+                    onTap: () {},
+                  ),
                 ],
               ),
               const SizedBox(height: 50),
