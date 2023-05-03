@@ -1,4 +1,5 @@
 import 'package:bubble_tea/components/bottom_nav_bar.dart';
+import 'package:bubble_tea/pages/login_page.dart';
 import 'package:bubble_tea/pages/shop_page.dart';
 import 'package:flutter/material.dart';
 
@@ -21,6 +22,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   final List<Widget> _pages = [
+    LoginPage(),
     const ShopPage(),
     const CartPage(),
   ];
