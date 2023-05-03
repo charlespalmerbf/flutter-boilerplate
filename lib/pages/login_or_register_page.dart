@@ -1,4 +1,5 @@
 import 'package:bubble_tea/pages/login_page.dart';
+import 'package:bubble_tea/pages/register_page.dart';
 import 'package:flutter/material.dart';
 
 class LoginOrRegisterPage extends StatefulWidget {
@@ -22,7 +23,7 @@ class _LoginOrRegisterPageState extends State<LoginOrRegisterPage> {
     if (showLoginPage) {
       return LoginPage(onTap: togglePages);
     } else {
-      return RegisterPage();
+      return RegisterPage(onTap: togglePages);
     }
   }
 }
