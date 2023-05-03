@@ -1,6 +1,7 @@
 import 'package:bubble_tea/components/primary_button.dart';
 import 'package:bubble_tea/components/sso_tile.dart';
 import 'package:bubble_tea/components/text_field.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -9,7 +10,9 @@ class LoginPage extends StatelessWidget {
   final usernameController = TextEditingController();
   final passwordController = TextEditingController();
 
-  void signUserIn() {}
+  void signUserIn() async {
+    await FirebaseAuth.instance.signInWithEmailAndPassword(email: usernameController.text, password: passwordController.text);
+  }
 
   @override
   Widget build(BuildContext context) {
