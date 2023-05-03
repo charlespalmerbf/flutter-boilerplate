@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'cart_page.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+  HomePage({super.key});
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -14,6 +14,8 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
+
+  final user = FirebaseAuth.instance.currentUser;
 
   void signUserOut() {
     FirebaseAuth.instance.signOut();
@@ -34,7 +36,12 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.brown[100],
-      appBar: AppBar(actions: [IconButton(onPressed: signUserOut, icon: const Icon(Icons.logout))]),
+      appBar: AppBar(
+          title: Text('Logged in as ${user?.email!}',
+              style: const TextStyle(fontSize: 12)),
+          actions: [
+            IconButton(onPressed: signUserOut, icon: const Icon(Icons.logout))
+          ]),
       bottomNavigationBar: BottomNavBar(
         onTabChange: (index) => navigateBottomBar(index),
       ),
