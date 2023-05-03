@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "110921428685",
+    "project_id": "auth-flutter-60de1",
+    "storage_bucket": "auth-flutter-60de1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:110921428685:android:618ee6f94b1a91e5038384",
+        "android_client_info": {
+          "package_name": "com.example.bubble_tea"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "110921428685-k5t1ipt0d6dpdgke7211k7a7tump0okc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeV4Cpu6ooySvRm8kDpY8QokWAOt4dd30"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "110921428685-k5t1ipt0d6dpdgke7211k7a7tump0okc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
