@@ -17,7 +17,9 @@ class LoginPage extends StatelessWidget {
       backgroundColor: Colors.grey[300],
       body: SafeArea(
         child: Center(
-          child: Column(children: [
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
             const SizedBox(height: 50),
             const Icon(Icons.lock, size: 100),
             const SizedBox(height: 50),
@@ -78,6 +80,15 @@ class LoginPage extends StatelessWidget {
                 SSOTile(imagePath: 'lib/images/google.png'),
                 SizedBox(width: 25),
                 SSOTile(imagePath: 'lib/images/apple.png'),
+              ],
+            ),
+            const SizedBox(height: 50),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text('Not a member?', style: TextStyle(color: Colors.grey[700])),
+                const SizedBox(width: 5),
+                const Text('Register now', style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold)),
               ],
             )
           ]),
