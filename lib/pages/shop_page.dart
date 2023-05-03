@@ -14,8 +14,10 @@ class ShopPage extends StatefulWidget {
 
 class _ShopPageState extends State<ShopPage> {
   void goToOrderPage(Drink drink) {
-    Navigator.push(context, MaterialPageRoute(builder: (context) => OrderPage(drink: drink)));
+    Navigator.push(context,
+        MaterialPageRoute(builder: (context) => OrderPage(drink: drink)));
   }
+
   @override
   Widget build(BuildContext context) {
     return Consumer<BubbleTeaShop>(
@@ -30,7 +32,10 @@ class _ShopPageState extends State<ShopPage> {
                           itemCount: value.shop.length,
                           itemBuilder: (context, index) {
                             Drink individualDrink = value.shop[index];
-                            return DrinkTile(drink: individualDrink, trailing: const Icon(Icons.arrow_forward), onTap: () => goToOrderPage(individualDrink));
+                            return DrinkTile(
+                                drink: individualDrink,
+                                trailing: const Icon(Icons.arrow_forward),
+                                onTap: () => goToOrderPage(individualDrink));
                           }))
                 ]),
               ),

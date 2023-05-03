@@ -40,9 +40,11 @@ class _OrderPageState extends State<OrderPage> {
 
     Navigator.pop(context);
 
-    showDialog(context: context, builder: (context) => const AlertDialog(
-      title: Text('Successfully added to cart!'),
-    ));
+    showDialog(
+        context: context,
+        builder: (context) => const AlertDialog(
+              title: Text('Successfully added to cart!'),
+            ));
   }
 
   @override
@@ -56,28 +58,49 @@ class _OrderPageState extends State<OrderPage> {
           children: [
             Padding(
               padding: const EdgeInsets.all(15.0),
-              child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-                Container(width: 100, child: const Text('Sweetness')),
-                Expanded(child: Slider(value: sweetValue, label: sweetValue.toString(), divisions: 4, onChanged: (value) => customizeSweet(value)))
-              ],),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(width: 100, child: const Text('Sweetness')),
+                  Expanded(
+                      child: Slider(
+                          value: sweetValue,
+                          label: sweetValue.toString(),
+                          divisions: 4,
+                          onChanged: (value) => customizeSweet(value)))
+                ],
+              ),
             ),
-
             Padding(
               padding: const EdgeInsets.all(15.0),
-              child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-                Container(width: 100, child: const Text('Ice')),
-                Expanded(child: Slider(value: iceValue, label: iceValue.toString(), divisions: 4, onChanged: (value) => customizeIce(value)))
-              ],),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(width: 100, child: const Text('Ice')),
+                  Expanded(
+                      child: Slider(
+                          value: iceValue,
+                          label: iceValue.toString(),
+                          divisions: 4,
+                          onChanged: (value) => customizeIce(value)))
+                ],
+              ),
             ),
-
             Padding(
               padding: const EdgeInsets.all(15.0),
-              child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-                Container(width: 100, child: const Text('Pearls')),
-                Expanded(child: Slider(value: pearlValue, label: pearlValue.toString(), divisions: 4, onChanged: (value) => customizePearl(value)))
-              ],),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(width: 100, child: const Text('Pearls')),
+                  Expanded(
+                      child: Slider(
+                          value: pearlValue,
+                          label: pearlValue.toString(),
+                          divisions: 4,
+                          onChanged: (value) => customizePearl(value)))
+                ],
+              ),
             ),
-
             MaterialButton(
               child: Text('Add to cart', style: TextStyle(color: Colors.white)),
               color: Colors.brown,
@@ -85,7 +108,6 @@ class _OrderPageState extends State<OrderPage> {
             )
           ],
         )
-
       ]),
     );
   }
