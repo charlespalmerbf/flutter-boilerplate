@@ -17,31 +17,38 @@ class _LoginPageState extends State<LoginPage> {
   final passwordController = TextEditingController();
 
   void wrongEmailMessage() {
-    showDialog(context: context, builder: (context) {
-      return const AlertDialog(
-        title: Text('This email is not in use.', style: TextStyle(fontSize: 12)),
-      );
-    });
+    showDialog(
+        context: context,
+        builder: (context) {
+          return const AlertDialog(
+            title: Text('This email is not in use.',
+                style: TextStyle(fontSize: 12)),
+          );
+        });
   }
-  
+
   void wrongPasswordMessage() {
-    showDialog(context: context, builder: (context) {
-      return const AlertDialog(
-        title: Text('Incorrect Password', style: TextStyle(fontSize: 12)),
-      );
-    });
+    showDialog(
+        context: context,
+        builder: (context) {
+          return const AlertDialog(
+            title: Text('Incorrect Password', style: TextStyle(fontSize: 12)),
+          );
+        });
   }
 
   void signUserIn() async {
-    showDialog(context: context, builder: (context) {
-      return const Center(
-        child: CircularProgressIndicator(),
-      );
-    });
+    showDialog(
+        context: context,
+        builder: (context) {
+          return const Center(
+            child: CircularProgressIndicator(),
+          );
+        });
 
     try {
       await FirebaseAuth.instance.signInWithEmailAndPassword(
-        email: usernameController.text, password: passwordController.text); 
+          email: usernameController.text, password: passwordController.text);
       // ignore: use_build_context_synchronously
       Navigator.pop(context);
     } on FirebaseAuthException catch (e) {
@@ -72,12 +79,14 @@ class _LoginPageState extends State<LoginPage> {
               TextInput(
                   controller: usernameController,
                   hintText: 'Username',
-                  obscureText: false),
+                  obscureText: false,
+                  prefixIcon: const Icon(Icons.mail)),
               const SizedBox(height: 10),
               TextInput(
                   controller: passwordController,
                   hintText: 'Password',
-                  obscureText: true),
+                  obscureText: true,
+                  prefixIcon: const Icon(Icons.lock)),
               const SizedBox(height: 10),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 25.0),
@@ -144,6 +153,4 @@ class _LoginPageState extends State<LoginPage> {
       ),
     );
   }
-  
-  
 }
