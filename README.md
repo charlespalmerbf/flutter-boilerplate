@@ -1,5 +1,4 @@
 # flutter_bubble_tea
-==================
 
 Flutter Bubble Tea is a sample Flutter application that showcases the use of various Flutter widgets and packages to create a Bubble Tea ordering application. This repository contains the source code for the application and documentation on how to run and use the app.
 
