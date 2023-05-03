@@ -25,16 +25,14 @@ Project Structure
 
 This project follows the standard Flutter project structure, with a few additions to help you get started quickly:
 
-```
-.
+```.
 ├── lib/                      # Contains the main application code
 │   ├── models/               # Data models used in the app
-│   ├── screens/              # App screens/pages
-│   ├── services/             # API, database and other services
-│   ├── utils/                # Utility classes and functions
-│   ├── widgets/              # Reusable widgets
+│   ├── pages/                # App screens/pages
+│   ├── images/               # Assets and images
+│   ├── components/           # Reusable widgets
 │   ├── main.dart             # Entry point of the application
-│   └── routes.dart           # Defines the application routes
+│   └── firebase_options.dart # Defines firebase configuration
 ├── assets/                   # Contains static assets used in the app
 ├── test/                     # Contains unit and widget tests
 ├── ios/                      # iOS specific files
