@@ -1,54 +1,64 @@
-# flutter_bubble_tea
+Flutter Boilerplate App
+=======================
 
-Flutter Bubble Tea is a sample Flutter application that showcases the use of various Flutter widgets and packages to create a Bubble Tea ordering application. This repository contains the source code for the application and documentation on how to run and use the app.
+This is a boilerplate Flutter application that you can use as a starting point for your next project. It includes a basic project structure, some sample code, and commonly used libraries and packages that you can easily extend or modify to suit your needs.
 
-Table of Contents
------------------
+Getting Started
+---------------
 
--   [Installation](https://chat.openai.com/#installation)
--   [Usage](https://chat.openai.com/#usage)
--   [Features](https://chat.openai.com/#features)
--   [Contributing](https://chat.openai.com/#contributing)
--   [License](https://chat.openai.com/#license)
+To get started, you'll need to have Flutter installed on your local machine. If you haven't already, please follow the [Flutter installation guide](https://flutter.dev/docs/get-started/install) for your operating system.
 
-Installation
-------------
+Once you have Flutter installed, you can clone this repository to your local machine using the following command:
 
-To install the application, follow the steps below:
+`git clone https://github.com/charlespalmerbf/flutter-boilerplate.git`
 
-1.  Clone this repository:
+Next, navigate to the project directory and run the following command to download the project dependencies:
 
-`git clone https://github.com/charlespalmerbf/flutter-bubble-tea.git`
+`flutter pub get`
 
-1.  Install dependencies:
-
-`cd flutter-bubble-tea
-flutter pub get`
-
-Usage
------
-
-To run the application, use the following command:
+Finally, run the app on your preferred device or emulator using the following command:
 
 `flutter run`
 
-This will launch the application on your connected device or emulator.
+Project Structure
+-----------------
 
-Features
---------
+This project follows the standard Flutter project structure, with a few additions to help you get started quickly:
 
-The application includes the following features:
+```.
+├── lib/                      # Contains the main application code
+│   ├── models/               # Data models used in the app
+│   ├── pages/                # App screens/pages
+│   ├── images/               # Assets and images
+│   ├── components/           # Reusable widgets
+│   ├── main.dart             # Entry point of the application
+│   └── firebase_options.dart # Defines firebase configuration
+├── assets/                   # Contains static assets used in the app
+├── test/                     # Contains unit and widget tests
+├── ios/                      # iOS specific files
+├── android/                  # Android specific files
+├── pubspec.yaml              # Flutter project configuration file
+└── README.md                 # This file
+```
 
--   User authentication using Firebase Authentication.
--   Displaying a list of Bubble Tea items with images, descriptions, and prices.
--   Adding Bubble Tea items to the cart.
--   Displaying the cart with the list of items, total price, and checkout button.
--   Placing an order, which is sent to Firebase Cloud Firestore.
--   Viewing order history for the logged-in user.
--   Updating the user's profile information.
+Included Packages
+-----------------
+
+This boilerplate app comes with several commonly used Flutter packages pre-installed, including:
+
+-   [dio](https://pub.dev/packages/dio): A powerful Http client for Dart, which supports Interceptors, Global configuration, FormData, Request Cancellation, File downloading, Timeout etc.
+-   [flutter_bloc](https://pub.dev/packages/flutter_bloc): Flutter Widgets that make it easy to implement the BLoC (Business Logic Component) design pattern.
+-   [equatable](https://pub.dev/packages/equatable): An abstract class that helps to implement value-based equality without needing to explicitly override == and hashCode.
+-   [shared_preferences](https://pub.dev/packages/shared_preferences): A plugin for reading and writing simple key-value pairs to disk.
+-   [flutter_svg](https://pub.dev/packages/flutter_svg): A Flutter SVG rendering library to provide the assets into widgets.
+-   [get_it](https://pub.dev/packages/get_it): A simple Service Locator for Dart and Flutter projects with some additional goodies highly inspired by [Splat](https://github.com/reactiveui/splat).
+
+These packages are included to help you get started more quickly, but you can remove or add any packages you need for your specific project requirements.
 
 Contributing
 ------------
+
+If you find any bugs or issues with this boilerplate app, please feel free to [open an issue](https://github.com/charlespalmerbf/flutter-boilerplate/issues) or [submit a pull request](https://github.com/charlespalmerbf/flutter-boilerplate/pulls). 
 
 Contributions to this project are welcome. To contribute, follow these steps:
 
