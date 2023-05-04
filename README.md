@@ -31,6 +31,7 @@ This project follows the standard Flutter project structure, with a few addition
 │   ├── pages/                # App screens/pages
 │   ├── images/               # Assets and images
 │   ├── components/           # Reusable widgets
+│   ├── services/             # Auth service methods
 │   ├── main.dart             # Entry point of the application
 │   └── firebase_options.dart # Defines firebase configuration
 ├── assets/                   # Contains static assets used in the app
