@@ -41,7 +41,7 @@ class _ForgottenPageState extends State<ForgottenPage> {
         });
 
     try {
-      await FirebaseAuth.instance.sendPasswordResetEmail(email: usernameController.text);
+      await FirebaseAuth.instance.sendPasswordResetEmail(email: usernameController.text.trim());
       // ignore: use_build_context_synchronously
       Navigator.pop(context);
     } on FirebaseAuthException catch (e) {
@@ -62,7 +62,7 @@ class _ForgottenPageState extends State<ForgottenPage> {
               const SizedBox(height: 50),
               const Icon(Icons.lock, size: 100),
               const SizedBox(height: 50),
-              Text('Welcome back, you\'ve been missed!',
+              Text('Forgotten your password? Let\'s get you back on track!',
                   style: TextStyle(color: Colors.grey[700], fontSize: 16)),
               const SizedBox(height: 25),
               TextInput(
