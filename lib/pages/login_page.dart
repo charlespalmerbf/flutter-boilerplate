@@ -7,8 +7,10 @@ import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
   final Function()? onTap;
+  final Function()? onForgottenTap;
 
-  LoginPage({super.key, required this.onTap});
+  const LoginPage(
+      {super.key, required this.onTap, required this.onForgottenTap});
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -84,9 +86,12 @@ class _LoginPageState extends State<LoginPage> {
                 padding: const EdgeInsets.symmetric(horizontal: 25.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
-                  children: const [
-                    Text('Forgot Password?',
-                        style: TextStyle(color: Colors.blue)),
+                  children: [
+                    GestureDetector(
+                      onTap: widget.onForgottenTap,
+                      child: const Text('Forgot Password?',
+                          style: TextStyle(color: Colors.blue)),
+                    ),
                   ],
                 ),
               ),
