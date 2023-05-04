@@ -1,3 +1,4 @@
+import 'package:bubble_tea/pages/forgotten_page.dart';
 import 'package:bubble_tea/pages/login_page.dart';
 import 'package:bubble_tea/pages/register_page.dart';
 import 'package:flutter/material.dart';
@@ -11,6 +12,7 @@ class LoginOrRegisterPage extends StatefulWidget {
 
 class _LoginOrRegisterPageState extends State<LoginOrRegisterPage> {
   bool showLoginPage = true;
+  bool showForgottenPage = false;
 
   void togglePages() {
     setState(() {
@@ -18,12 +20,22 @@ class _LoginOrRegisterPageState extends State<LoginOrRegisterPage> {
     });
   }
 
+  void toggleForgotten() {
+    setState(() {
+      showForgottenPage = !showForgottenPage;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
-    if (showLoginPage) {
-      return LoginPage(onTap: togglePages);
+    if (showForgottenPage) {
+      return ForgottenPage(onForgottenTap: toggleForgotten);
     } else {
-      return RegisterPage(onTap: togglePages);
+      if (showLoginPage) {
+        return LoginPage(onTap: togglePages, onForgottenTap: toggleForgotten);
+      } else {
+        return RegisterPage(onTap: togglePages);
+      }
     }
   }
 }
