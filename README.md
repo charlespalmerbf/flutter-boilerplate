@@ -121,6 +121,70 @@ Note: This guide assumes you're using a macOS operating system.
 
 Congratulations! You've successfully installed Flutter on your macOS system. Now you can start developing cross-platform apps using Flutter. Make sure to keep an eye on the Flutter documentation and official resources for further guidance on using Flutter and building your apps. Happy coding!
 
+Installing Flutter On Linux
+---------------
+Note: This guide assumes you're using a Linux distribution. The instructions may vary slightly depending on your specific distribution.
+
+1.  System Requirements:
+
+    -   Operating System: Linux (64-bit)
+    -   Disk Space: 400 MB (excluding IDE/tooling)
+    -   Tools: Git, wget (if not already installed)
+2.  Download Flutter:
+
+    -   Open a terminal window.
+    -   Navigate to the directory where you want to store Flutter (e.g., `cd ~/development`).
+    -   Run the following commands to download and extract the Flutter SDK:
+
+        arduinoCopy code
+
+        `wget https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_2.8.1-stable.tar.xz
+        tar xf flutter_linux_2.8.1-stable.tar.xz`
+
+3.  Set Up Environment Variables:
+
+    -   Open a terminal and use a text editor to open the `.bashrc` file in your home directory (e.g., `nano ~/.bashrc`).
+    -   Add the following lines to the end of the file:
+
+        bashCopy code
+
+        `export PATH="$PATH:[PATH_TO_FLUTTER_GIT_DIRECTORY]/flutter/bin"
+        export PATH="$PATH:[PATH_TO_FLUTTER_GIT_DIRECTORY]/flutter/bin/cache/dart-sdk/bin"`
+
+        Replace `[PATH_TO_FLUTTER_GIT_DIRECTORY]` with the path to the Flutter SDK directory you extracted in step 2 (e.g., `~/development/flutter`).
+    -   Save the file and exit the text editor.
+    -   In the terminal, run the following command to apply the changes:
+
+        bashCopy code
+
+        `source ~/.bashrc`
+
+4.  Install Flutter Dependencies:
+
+    -   In the terminal, run the following command to check if your system is ready for Flutter:
+
+        Copy code
+
+        `flutter doctor`
+
+    -   If any dependencies are missing, the command will provide guidance on how to install them. Follow the instructions to install the missing dependencies.
+5.  Set Up Android Development Environment (Optional):
+
+    -   If you want to develop Flutter apps for Android, you'll need to set up the Android development environment. Follow these steps:
+        -   Install OpenJDK 8 or later.
+        -   Download and install Android Studio from: <https://developer.android.com/studio>
+        -   Open Android Studio and go to "Configure" in the welcome screen, then select "SDK Manager."
+        -   Under the "SDK Platforms" tab, check the box for the latest Android SDK version.
+        -   Go to the "SDK Tools" tab and check the box for "Android SDK Build-Tools" and "Android Emulator" (select the latest versions available).
+        -   Click "Apply" and then "OK" to install the selected components.
+6.  Verify Flutter Installation:
+
+    -   Open a terminal.
+    -   Run the command `flutter doctor` to verify that everything is set up correctly.
+    -   If any issues are reported, follow the instructions provided to resolve them.
+
+Congratulations! You've successfully installed Flutter on your Linux machine. Now you can start developing cross-platform apps using Flutter. Make sure to keep an eye on the Flutter documentation and official resources for further guidance on using Flutter and building your apps. Happy coding!
+
 Getting Started
 ---------------
 Once you have Flutter installed, you can clone this repository to your local machine using the following command:
