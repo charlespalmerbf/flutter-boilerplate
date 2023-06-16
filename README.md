@@ -3,7 +3,7 @@ Blue Frontier Flutter Boilerplate App
 
 This is a boilerplate Flutter application that you can use as a starting point for your next project. It includes a basic project structure, some sample code, and commonly used libraries and packages that you can easily extend or modify to suit your needs.
 
-Installing Flutter
+Installing Flutter On Windows
 ---------------
 
 To get started, you'll need to have Flutter installed on your local machine. If you haven't already, please follow the [Flutter installation guide](https://flutter.dev/docs/get-started/install) for your operating system or follow the instructions below.
@@ -59,6 +59,67 @@ Note: This guide assumes you're using a Windows operating system. If you're on m
     -   If any issues are reported, follow the instructions provided to resolve them.
 
 Congratulations! You've successfully installed Flutter on your Windows system. Now you can start developing cross-platform apps using Flutter. Make sure to keep an eye on the Flutter documentation and official resources for further guidance on using Flutter and building your apps. Happy coding!
+
+Installing Flutter On MacOS
+---------------
+Note: This guide assumes you're using a macOS operating system.
+
+1.  System Requirements:
+
+    -   Operating System: macOS (64-bit)
+    -   Disk Space: 400 MB (excluding IDE/tooling)
+    -   Tools: Git (if not already installed)
+2.  Download Flutter:
+
+    -   Visit the Flutter SDK download page: <https://flutter.dev/docs/get-started/install/macos>
+    -   Click on the "macOS" button to download the Flutter SDK zip file.
+    -   Open Terminal, navigate to the directory where you want to store Flutter (e.g., `cd ~/development`) and execute the following command to download and extract the Flutter SDK:
+
+        pythonCopy code
+
+        `curl -O https://storage.googleapis.com/flutter_infra/releases/stable/macos/flutter_macos_2.8.1-stable.zip
+        unzip flutter_macos_2.8.1-stable.zip`
+
+3.  Set Up Environment Variables:
+
+    -   Open Terminal and use a text editor to open the `.bash_profile` file in your home directory (e.g., `nano ~/.bash_profile`).
+    -   Add the following lines to the end of the file:
+
+        bashCopy code
+
+        `export PATH="$PATH:[PATH_TO_FLUTTER_GIT_DIRECTORY]/flutter/bin"
+        export PATH="$PATH:[PATH_TO_FLUTTER_GIT_DIRECTORY]/flutter/bin/cache/dart-sdk/bin"`
+
+        Replace `[PATH_TO_FLUTTER_GIT_DIRECTORY]` with the path to the Flutter SDK directory you extracted in step 2 (e.g., `~/development/flutter`).
+    -   Save the file and exit the text editor.
+    -   In Terminal, run the following command to apply the changes:
+
+        bashCopy code
+
+        `source ~/.bash_profile`
+
+4.  Install Flutter Dependencies:
+
+    -   In Terminal, run the following command to check if your system is ready for Flutter:
+
+        Copy code
+
+        `flutter doctor`
+
+    -   If any dependencies are missing, the command will provide guidance on how to install them. Follow the instructions to install the missing dependencies.
+5.  Set Up iOS Development Environment:
+
+    -   Install Xcode from the Mac App Store.
+    -   Once Xcode is installed, open it and accept the license agreement.
+    -   Go to "Preferences" from the top menu and navigate to the "Locations" tab.
+    -   Make sure the "Command Line Tools" option is set to the installed version of Xcode.
+6.  Verify Flutter Installation:
+
+    -   Open Terminal.
+    -   Run the command `flutter doctor` to verify that everything is set up correctly.
+    -   If any issues are reported, follow the instructions provided to resolve them.
+
+Congratulations! You've successfully installed Flutter on your macOS system. Now you can start developing cross-platform apps using Flutter. Make sure to keep an eye on the Flutter documentation and official resources for further guidance on using Flutter and building your apps. Happy coding!
 
 Getting Started
 ---------------
