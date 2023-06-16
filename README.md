@@ -4,17 +4,17 @@ Blue Frontier Flutter Boilerplate App
 ##  1. <a name='TOC'></a>TOC
 
 <!-- vscode-markdown-toc -->
-* 1. [TOC](#TOC)
-* 2. [Introduction](#Introduction)
-* 3. [Installing Flutter On Windows](#InstallingFlutterOnWindows)
-* 4. [Installing Flutter On MacOS](#InstallingFlutterOnMacOS)
-* 5. [Installing Flutter On Linux](#InstallingFlutterOnLinux)
-* 6. [How Do Install Packages with Flutter?](#HowDoInstallPackageswithFlutter)
-* 7. [Getting Started](#GettingStarted)
-* 8. [Project Structure](#ProjectStructure)
-* 9. [Included Packages](#IncludedPackages)
-* 10. [Conventional Commits](#ConventionalCommits)
-* 11. [Pull Requests, Approvals & Releases](#PullRequestsApprovalsReleases)
+* 1. [TOC](#1-toc)
+* 2. [Introduction](#2-introduction)
+* 3. [Installing Flutter On Windows](#3-installing-flutter-on-windows)
+* 4. [Installing Flutter On MacOS](#4-installing-flutter-on-macos)
+* 5. [Installing Flutter On Linux](#5-installing-flutter-on-linux)
+* 6. [How Do Install Packages with Flutter?](#6-how-do-install-packages-with-flutter)
+* 7. [Getting Started](#7-getting-started)
+* 8. [Project Structure](#8-project-structure)
+* 9. [Included Packages](#9-included-packages)
+* 10. [Conventional Commits](#10-conventional-commits)
+* 11. [Pull Requests, Approvals & Releases](#11-pull-requests-approvals-releases)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
