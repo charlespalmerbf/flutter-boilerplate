@@ -1,4 +1,4 @@
-Flutter Boilerplate App
+Blue Frontier Flutter Boilerplate App
 =======================
 
 This is a boilerplate Flutter application that you can use as a starting point for your next project. It includes a basic project structure, some sample code, and commonly used libraries and packages that you can easily extend or modify to suit your needs.
