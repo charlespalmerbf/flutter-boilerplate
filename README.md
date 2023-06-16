@@ -185,6 +185,18 @@ Note: This guide assumes you're using a Linux distribution. The instructions may
 
 Congratulations! You've successfully installed Flutter on your Linux machine. Now you can start developing cross-platform apps using Flutter. Make sure to keep an eye on the Flutter documentation and official resources for further guidance on using Flutter and building your apps. Happy coding!
 
+How Do Install Packages with Flutter?
+---------------
+<https://pub.dev/> is the official package repository for Dart and Flutter. It is a website where developers can discover, publish, and download packages for their Dart and Flutter projects.
+
+On pub.dev, you can find a vast collection of open-source packages contributed by the community. These packages provide various functionalities, utilities, and libraries that can be used to enhance your Dart and Flutter projects.
+
+Developers can search for packages on pub.dev using keywords, browse through different categories, and view detailed information about each package, including its version history, documentation, and usage examples.
+
+When you find a package that suits your needs, you can easily integrate it into your Dart or Flutter project by adding its dependency in your `pubspec.yaml` file. The Flutter tooling uses pub.dev as the default package source, making it convenient for developers to manage dependencies and keep their projects up to date.
+
+Pub.dev also provides features like versioning, package analysis, and documentation generation, which make it a valuable resource for the Dart and Flutter development community.
+
 Getting Started
 ---------------
 Once you have Flutter installed, you can clone this repository to your local machine using the following command:
