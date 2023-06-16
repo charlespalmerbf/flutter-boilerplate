@@ -1,9 +1,32 @@
 Blue Frontier Flutter Boilerplate App
 =======================
 
+##  1. <a name='TOC'></a>TOC
+
+<!-- vscode-markdown-toc -->
+* 1. [TOC](#TOC)
+* 2. [Introduction](#Introduction)
+* 3. [Installing Flutter On Windows](#InstallingFlutterOnWindows)
+* 4. [Installing Flutter On MacOS](#InstallingFlutterOnMacOS)
+* 5. [Installing Flutter On Linux](#InstallingFlutterOnLinux)
+* 6. [How Do Install Packages with Flutter?](#HowDoInstallPackageswithFlutter)
+* 7. [Getting Started](#GettingStarted)
+* 8. [Project Structure](#ProjectStructure)
+* 9. [Included Packages](#IncludedPackages)
+* 10. [Conventional Commits](#ConventionalCommits)
+* 11. [Pull Requests, Approvals & Releases](#PullRequestsApprovalsReleases)
+
+<!-- vscode-markdown-toc-config
+	numbering=true
+	autoSave=true
+	/vscode-markdown-toc-config -->
+<!-- /vscode-markdown-toc -->
+
+##  2. <a name='Introduction'></a>Introduction
+
 This is a boilerplate Flutter application that you can use as a starting point for your next project. It includes a basic project structure, some sample code, and commonly used libraries and packages that you can easily extend or modify to suit your needs.
 
-Installing Flutter On Windows
+##  3. <a name='InstallingFlutterOnWindows'></a>Installing Flutter On Windows
 ---------------
 
 To get started, you'll need to have Flutter installed on your local machine. If you haven't already, please follow the [Flutter installation guide](https://flutter.dev/docs/get-started/install) for your operating system or follow the instructions below.
@@ -60,7 +83,7 @@ Note: This guide assumes you're using a Windows operating system. If you're on m
 
 Congratulations! You've successfully installed Flutter on your Windows system. Now you can start developing cross-platform apps using Flutter. Make sure to keep an eye on the Flutter documentation and official resources for further guidance on using Flutter and building your apps. Happy coding!
 
-Installing Flutter On MacOS
+##  4. <a name='InstallingFlutterOnMacOS'></a>Installing Flutter On MacOS
 ---------------
 Note: This guide assumes you're using a macOS operating system.
 
@@ -121,7 +144,7 @@ Note: This guide assumes you're using a macOS operating system.
 
 Congratulations! You've successfully installed Flutter on your macOS system. Now you can start developing cross-platform apps using Flutter. Make sure to keep an eye on the Flutter documentation and official resources for further guidance on using Flutter and building your apps. Happy coding!
 
-Installing Flutter On Linux
+##  5. <a name='InstallingFlutterOnLinux'></a>Installing Flutter On Linux
 ---------------
 Note: This guide assumes you're using a Linux distribution. The instructions may vary slightly depending on your specific distribution.
 
@@ -185,7 +208,7 @@ Note: This guide assumes you're using a Linux distribution. The instructions may
 
 Congratulations! You've successfully installed Flutter on your Linux machine. Now you can start developing cross-platform apps using Flutter. Make sure to keep an eye on the Flutter documentation and official resources for further guidance on using Flutter and building your apps. Happy coding!
 
-How Do Install Packages with Flutter?
+##  6. <a name='HowDoInstallPackageswithFlutter'></a>How Do Install Packages with Flutter?
 ---------------
 <https://pub.dev/> is the official package repository for Dart and Flutter. It is a website where developers can discover, publish, and download packages for their Dart and Flutter projects.
 
@@ -197,7 +220,7 @@ When you find a package that suits your needs, you can easily integrate it into 
 
 Pub.dev also provides features like versioning, package analysis, and documentation generation, which make it a valuable resource for the Dart and Flutter development community.
 
-Getting Started
+##  7. <a name='GettingStarted'></a>Getting Started
 ---------------
 Once you have Flutter installed, you can clone this repository to your local machine using the following command:
 
@@ -211,7 +234,7 @@ Finally, run the app on your preferred device or emulator using the following co
 
 `flutter run`
 
-Project Structure
+##  8. <a name='ProjectStructure'></a>Project Structure
 -----------------
 
 This project follows the standard Flutter project structure, with a few additions to help you get started quickly:
@@ -233,7 +256,7 @@ This project follows the standard Flutter project structure, with a few addition
 └── README.md                 # This file
 ```
 
-Included Packages
+##  9. <a name='IncludedPackages'></a>Included Packages
 -----------------
 
 This boilerplate app comes with several commonly used Flutter packages pre-installed, including:
@@ -247,13 +270,13 @@ This boilerplate app comes with several commonly used Flutter packages pre-insta
 
 These packages are included to help you get started more quickly, but you can remove or add any packages you need for your specific project requirements.
 
-## Conventional Commits
+##  10. <a name='ConventionalCommits'></a>Conventional Commits
 
 This project uses a specification called **Conventional Commits**, please **ensure** this specification is followed when commiting code to this project.
 
 Guide: https://www.conventionalcommits.org/en/v1.0.0/
 
-## Pull Requests, Approvals & Releases
+##  11. <a name='PullRequestsApprovalsReleases'></a>Pull Requests, Approvals & Releases
 
 ###### Creating the develop release pull request
 
