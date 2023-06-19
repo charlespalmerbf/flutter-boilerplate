@@ -36,7 +36,7 @@ class _CartPageState extends State<CartPage> {
                                 trailing: const Icon(Icons.delete));
                           })),
                   MaterialButton(
-                    color: Colors.brown,
+                    color: Colors.blueGrey,
                     onPressed: () {},
                     child: const Text(
                       'PAY',

@@ -20,7 +20,7 @@ class DrinkTile extends StatelessWidget {
       child: Container(
         margin: const EdgeInsets.only(bottom: 10),
         decoration: BoxDecoration(
-            color: Colors.brown[200], borderRadius: BorderRadius.circular(12)),
+            color: Colors.blueGrey[200], borderRadius: BorderRadius.circular(12)),
         child: ListTile(
           title: Text(drink.name),
           subtitle: Text(drink.price),

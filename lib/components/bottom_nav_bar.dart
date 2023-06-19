@@ -12,9 +12,9 @@ class BottomNavBar extends StatelessWidget {
       child: GNav(
           onTabChange: (value) => onTabChange!(value),
           mainAxisAlignment: MainAxisAlignment.center,
-          activeColor: Colors.white,
-          color: Colors.grey[300],
-          tabActiveBorder: Border.all(color: Colors.white),
+          activeColor: Colors.black,
+          color: Colors.black,
+          tabActiveBorder: Border.all(color: Colors.black),
           gap: 8,
           tabs: const [
             GButton(icon: Icons.home, text: 'Shop', key: Key('shop_button')),

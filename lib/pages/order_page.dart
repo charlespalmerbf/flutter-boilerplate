@@ -51,7 +51,7 @@ class _OrderPageState extends State<OrderPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text(widget.drink.name)),
-      backgroundColor: Colors.brown[200],
+      backgroundColor: Colors.grey[200],
       body: Column(children: [
         Image.asset(widget.drink.imagePath),
         Column(
@@ -103,7 +103,7 @@ class _OrderPageState extends State<OrderPage> {
             ),
             MaterialButton(
               child: Text('Add to cart', style: TextStyle(color: Colors.white)),
-              color: Colors.brown,
+              color: Colors.blueGrey,
               onPressed: addToCart,
             )
           ],

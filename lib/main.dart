@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       create: (context) => BubbleTeaShop(),
       builder: (context, child) => MaterialApp(
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(primarySwatch: Colors.grey),
+        theme: ThemeData(primarySwatch: Colors.blueGrey),
         home: const AuthPage(),
       ),
     );
