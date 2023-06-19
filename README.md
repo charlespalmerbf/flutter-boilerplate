@@ -258,7 +258,7 @@ Note: This guide assumes you're using a Linux distribution. The instructions may
 
 Congratulations! You've successfully installed Flutter on your Linux machine. Now you can start developing cross-platform apps using Flutter. Make sure to keep an eye on the Flutter documentation and official resources for further guidance on using Flutter and building your apps. Happy coding!
 
-##  8. <a name='HowDoInstallPackageswithFlutter'></a>How Do Install Packages with Flutter?
+##  8. <a name='HowDoInstallPackageswithFlutter'></a>How Do I Install Packages with Flutter?
 ---------------
 <https://pub.dev/> is the official package repository for Dart and Flutter. It is a website where developers can discover, publish, and download packages for their Dart and Flutter projects.
 
@@ -270,7 +270,36 @@ When you find a package that suits your needs, you can easily integrate it into 
 
 Pub.dev also provides features like versioning, package analysis, and documentation generation, which make it a valuable resource for the Dart and Flutter development community.
 
-##  9. <a name='GettingStarted'></a>Getting Started
+##  9. <a name='StatefullVsStatelessWidgetsInFlutter'></a>Statefull vs Stateless Widgets In Flutter?
+---------------
+In Flutter, there are two main types of components: stateless widgets and stateful widgets. Understanding the differences between these two types is crucial for building Flutter applications effectively.
+
+Stateless Widgets: A stateless widget, as the name suggests, is a widget that does not have any mutable state. Once created, its properties (or inputs) remain constant throughout its lifetime. Here are some characteristics of stateless widgets:
+
+1.  Immutable: Stateless widgets are immutable, meaning their properties cannot be changed once they are initialized.
+2.  No Internal State: Stateless widgets do not maintain any internal state that can change over time.
+3.  Rebuild on Demand: Stateless widgets are rebuilt only when their parent widget rebuilds or when the app's state changes.
+4.  Simple and Lightweight: Stateless widgets are simpler and lighter in terms of code complexity and memory usage compared to stateful widgets.
+
+Stateless widgets are ideal for representing UI components that do not need to change their appearance or behavior based on user interactions or application state. Examples of stateless widgets include buttons, icons, labels, and static images.
+
+Stateful Widgets: In contrast, stateful widgets can maintain mutable state within themselves, allowing them to change and update dynamically. Here are some characteristics of stateful widgets:
+
+1.  Mutable State: Stateful widgets can have mutable properties that can be modified during their lifetime.
+2.  Internal State Management: Stateful widgets manage their own internal state and can update their appearance based on that state.
+3.  Rebuild on State Change: Stateful widgets are rebuilt automatically when their internal state changes.
+4.  Complexity and Overhead: Stateful widgets require more code and memory overhead compared to stateless widgets due to managing internal state.
+
+Stateful widgets are typically used for interactive components that respond to user input or that need to maintain their own state. Examples include forms, scrollable lists, video players, and dynamic data-driven UI elements.
+
+To summarize, when choosing between stateless and stateful widgets:
+
+-   Use stateless widgets for static UI components that don't change their appearance or behavior based on user interaction or application state.
+-   Use stateful widgets when you need to manage and update mutable state within the widget itself or when the component needs to respond to user input or changes in the application state.
+
+Note that Flutter provides various state management approaches (such as Provider, Bloc, MobX, etc.) that can be used with both stateless and stateful widgets to manage application-wide state and handle complex state interactions efficiently.
+
+##  10. <a name='GettingStarted'></a>Getting Started
 ---------------
 Once you have Flutter installed, you can clone this repository to your local machine using the following command:
 
@@ -284,7 +313,7 @@ Finally, run the app on your preferred device or emulator using the following co
 
 `flutter run`
 
-##  10. <a name='ProjectStructure'></a>Project Structure
+##  11. <a name='ProjectStructure'></a>Project Structure
 -----------------
 
 This project follows the standard Flutter project structure, with a few additions to help you get started quickly:
@@ -306,7 +335,7 @@ This project follows the standard Flutter project structure, with a few addition
 └── README.md                 # This file
 ```
 
-##  11. <a name='IncludedPackages'></a>Included Packages
+##  12. <a name='IncludedPackages'></a>Included Packages
 -----------------
 
 This boilerplate app comes with several commonly used Flutter packages pre-installed, including:
@@ -320,13 +349,13 @@ This boilerplate app comes with several commonly used Flutter packages pre-insta
 
 These packages are included to help you get started more quickly, but you can remove or add any packages you need for your specific project requirements.
 
-##  12. <a name='ConventionalCommits'></a>Conventional Commits
+##  13. <a name='ConventionalCommits'></a>Conventional Commits
 
 This project uses a specification called **Conventional Commits**, please **ensure** this specification is followed when commiting code to this project.
 
 Guide: https://www.conventionalcommits.org/en/v1.0.0/
 
-##  13. <a name='PullRequestsApprovalsReleases'></a>Pull Requests, Approvals & Releases
+##  14. <a name='PullRequestsApprovalsReleases'></a>Pull Requests, Approvals & Releases
 
 ###### Creating the develop release pull request
 
@@ -334,7 +363,7 @@ Pull Requests made to this project are required in order to merge to **develop**
 
 When submitting a Pull Request, at least one approval is required before merging. 
 
-When constructing a release, ensure that a release branch is created based off of the contents of develop, the only changes contained within this branch should be the version numbers in **package.json** and android's **build.gradle**. 
+When constructing a release, ensure that a release branch is created based off of the contents of develop, the only changes contained within this branch should be the version number in **package.json**. 
 
 The Pull Request should be named as **[develop] release vX.Y.Z**
 
@@ -364,4 +393,4 @@ Contributions to this project are welcome. To contribute, follow these steps:
 License
 -------
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://chat.openai.com/LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](#) file for details.
