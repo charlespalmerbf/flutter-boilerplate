@@ -25,8 +25,13 @@ class _ShopPageState extends State<ShopPage> {
               child: Padding(
                 padding: const EdgeInsets.all(25.0),
                 child: Column(children: [
-                  const Text("Blue Frontier Flutter Boilerplate", style: TextStyle(fontSize: 20)),
-                  const SizedBox(height: 10),
+                  Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: Image.asset('lib/images/logo.png'),
+                  ),
+                  const Text("Flutter Boilerplate",
+                      style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold)),
+                  const SizedBox(height: 30),
                   Expanded(
                       child: ListView.builder(
                           itemCount: value.shop.length,

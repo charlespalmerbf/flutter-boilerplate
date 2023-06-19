@@ -46,7 +46,8 @@ class _LoginPageState extends State<LoginPage> {
 
     try {
       await FirebaseAuth.instance.signInWithEmailAndPassword(
-          email: usernameController.text.trim(), password: passwordController.text.trim());
+          email: usernameController.text.trim(),
+          password: passwordController.text.trim());
       // ignore: use_build_context_synchronously
       Navigator.pop(context);
     } on FirebaseAuthException catch (e) {
@@ -64,11 +65,13 @@ class _LoginPageState extends State<LoginPage> {
           child: Center(
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-              const SizedBox(height: 50),
+              const SizedBox(height: 30),
               Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: Image.asset('lib/images/logo.png'),
               ),
+              const Text("Flutter Boilerplate",
+                  style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold)),
               const SizedBox(height: 50),
               Text('Welcome back, you\'ve been missed!',
                   style: TextStyle(color: Colors.grey[700], fontSize: 16)),

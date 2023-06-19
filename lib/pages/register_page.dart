@@ -43,9 +43,11 @@ class _RegisterPageState extends State<RegisterPage> {
         });
 
     try {
-      if (passwordController.text.trim() == confirmPasswordController.text.trim()) {
+      if (passwordController.text.trim() ==
+          confirmPasswordController.text.trim()) {
         await FirebaseAuth.instance.createUserWithEmailAndPassword(
-            email: usernameController.text.trim(), password: passwordController.text.trim());
+            email: usernameController.text.trim(),
+            password: passwordController.text.trim());
         // ignore: use_build_context_synchronously
         Navigator.pop(context);
       } else {
@@ -71,7 +73,9 @@ class _RegisterPageState extends State<RegisterPage> {
                 padding: const EdgeInsets.all(20.0),
                 child: Image.asset('lib/images/logo.png'),
               ),
-              const SizedBox(height: 50),
+              const Text("Flutter Boilerplate",
+                  style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold)),
+              const SizedBox(height: 30),
               Text('Let\'s create an account for you!',
                   style: TextStyle(color: Colors.grey[700], fontSize: 16)),
               const SizedBox(height: 25),
