@@ -363,7 +363,7 @@ Pull Requests made to this project are required in order to merge to **develop**
 
 When submitting a Pull Request, at least one approval is required before merging. 
 
-When constructing a release, ensure that a release branch is created based off of the contents of develop, the only changes contained within this branch should be the version numbers in **package.json** and android's **build.gradle**. 
+When constructing a release, ensure that a release branch is created based off of the contents of develop, the only changes contained within this branch should be the version number in **package.json**. 
 
 The Pull Request should be named as **[develop] release vX.Y.Z**
 
@@ -393,4 +393,4 @@ Contributions to this project are welcome. To contribute, follow these steps:
 License
 -------
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://chat.openai.com/LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](#) file for details.
