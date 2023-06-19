@@ -1,7 +1,7 @@
-import 'package:bluefrontier_flutter_boilerplate/components/primary_button.dart';
-import 'package:bluefrontier_flutter_boilerplate/components/sso_tile.dart';
-import 'package:bluefrontier_flutter_boilerplate/components/text_field.dart';
-import 'package:bluefrontier_flutter_boilerplate/services/auth_service.dart';
+import 'package:flutter_boilerplate/components/primary_button.dart';
+import 'package:flutter_boilerplate/components/sso_tile.dart';
+import 'package:flutter_boilerplate/components/text_field.dart';
+import 'package:flutter_boilerplate/services/auth_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 

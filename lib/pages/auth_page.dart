@@ -1,5 +1,5 @@
-import 'package:bluefrontier_flutter_boilerplate/pages/home_page.dart';
-import 'package:bluefrontier_flutter_boilerplate/pages/login_or_register_page.dart';
+import 'package:flutter_boilerplate/pages/home_page.dart';
+import 'package:flutter_boilerplate/pages/login_or_register_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 

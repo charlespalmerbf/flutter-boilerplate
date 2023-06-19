@@ -1,7 +1,7 @@
-import 'package:bluefrontier_flutter_boilerplate/components/drink_tile.dart';
-import 'package:bluefrontier_flutter_boilerplate/models/drink.dart';
-import 'package:bluefrontier_flutter_boilerplate/models/shop.dart';
-import 'package:bluefrontier_flutter_boilerplate/pages/order_page.dart';
+import 'package:flutter_boilerplate/components/drink_tile.dart';
+import 'package:flutter_boilerplate/models/drink.dart';
+import 'package:flutter_boilerplate/models/shop.dart';
+import 'package:flutter_boilerplate/pages/order_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

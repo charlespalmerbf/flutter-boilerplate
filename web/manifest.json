@@ -1,6 +1,6 @@
 {
-    "name": "bluefrontier_flutter_boilerplate",
-    "short_name": "bluefrontier_flutter_boilerplate",
+    "name": "flutter_boilerplate",
+    "short_name": "flutter_boilerplate",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#hexcode",

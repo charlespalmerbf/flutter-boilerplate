@@ -1,10 +1,10 @@
 # Project-level configuration.
 cmake_minimum_required(VERSION 3.14)
-project(bluefrontier_flutter_boilerplate LANGUAGES CXX)
+project(flutter_boilerplate LANGUAGES CXX)
 
 # The name of the executable created for the application. Change this to change
 # the on-disk name of your application.
-set(BINARY_NAME "bluefrontier_flutter_boilerplate")
+set(BINARY_NAME "flutter_boilerplate")
 
 # Explicitly opt in to modern CMake behaviors to avoid warnings with recent
 # versions of CMake.

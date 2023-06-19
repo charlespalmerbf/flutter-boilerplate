@@ -1,6 +1,6 @@
-import 'package:bluefrontier_flutter_boilerplate/pages/forgotten_page.dart';
-import 'package:bluefrontier_flutter_boilerplate/pages/login_page.dart';
-import 'package:bluefrontier_flutter_boilerplate/pages/register_page.dart';
+import 'package:flutter_boilerplate/pages/forgotten_page.dart';
+import 'package:flutter_boilerplate/pages/login_page.dart';
+import 'package:flutter_boilerplate/pages/register_page.dart';
 import 'package:flutter/material.dart';
 
 class LoginOrRegisterPage extends StatefulWidget {

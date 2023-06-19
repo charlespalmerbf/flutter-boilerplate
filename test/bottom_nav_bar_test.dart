@@ -1,4 +1,4 @@
-import 'package:bluefrontier_flutter_boilerplate/components/bottom_nav_bar.dart';
+import 'package:flutter_boilerplate/components/bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';

@@ -1,5 +1,5 @@
-import 'package:bluefrontier_flutter_boilerplate/models/drink.dart';
-import 'package:bluefrontier_flutter_boilerplate/models/shop.dart';
+import 'package:flutter_boilerplate/models/drink.dart';
+import 'package:flutter_boilerplate/models/shop.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

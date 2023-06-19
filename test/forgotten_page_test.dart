@@ -1,5 +1,5 @@
-import 'package:bluefrontier_flutter_boilerplate/components/text_field.dart';
-import 'package:bluefrontier_flutter_boilerplate/pages/forgotten_page.dart';
+import 'package:flutter_boilerplate/components/text_field.dart';
+import 'package:flutter_boilerplate/pages/forgotten_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';

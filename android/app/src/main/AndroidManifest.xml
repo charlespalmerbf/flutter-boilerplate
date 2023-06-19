@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.bluefrontier_flutter_boilerplate">
+    package="com.example.flutter_boilerplate">
    <application
-        android:label="bluefrontier_flutter_boilerplate"
+        android:label="flutter_boilerplate"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon">
         <activity
