@@ -1,5 +1,5 @@
-import 'package:bubble_tea/components/bottom_nav_bar.dart';
-import 'package:bubble_tea/pages/shop_page.dart';
+import 'package:bluefrontier_flutter_boilerplate/components/bottom_nav_bar.dart';
+import 'package:bluefrontier_flutter_boilerplate/pages/shop_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 

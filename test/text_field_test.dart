@@ -1,4 +1,4 @@
-import 'package:bubble_tea/components/text_field.dart';
+import 'package:bluefrontier_flutter_boilerplate/components/text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 

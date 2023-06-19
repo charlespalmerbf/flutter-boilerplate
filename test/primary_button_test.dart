@@ -1,4 +1,4 @@
-import 'package:bubble_tea/components/primary_button.dart';
+import 'package:bluefrontier_flutter_boilerplate/components/primary_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 

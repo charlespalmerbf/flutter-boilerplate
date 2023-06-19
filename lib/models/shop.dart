@@ -1,4 +1,4 @@
-import 'package:bubble_tea/models/drink.dart';
+import 'package:bluefrontier_flutter_boilerplate/models/drink.dart';
 import 'package:flutter/material.dart';
 
 class BubbleTeaShop extends ChangeNotifier {

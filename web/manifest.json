@@ -1,6 +1,6 @@
 {
-    "name": "bubble_tea",
-    "short_name": "bubble_tea",
+    "name": "bluefrontier_flutter_boilerplate",
+    "short_name": "bluefrontier_flutter_boilerplate",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

@@ -1,7 +1,7 @@
-import 'package:bubble_tea/components/drink_tile.dart';
-import 'package:bubble_tea/models/drink.dart';
-import 'package:bubble_tea/models/shop.dart';
-import 'package:bubble_tea/pages/order_page.dart';
+import 'package:bluefrontier_flutter_boilerplate/components/drink_tile.dart';
+import 'package:bluefrontier_flutter_boilerplate/models/drink.dart';
+import 'package:bluefrontier_flutter_boilerplate/models/shop.dart';
+import 'package:bluefrontier_flutter_boilerplate/pages/order_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -25,7 +25,7 @@ class _ShopPageState extends State<ShopPage> {
               child: Padding(
                 padding: const EdgeInsets.all(25.0),
                 child: Column(children: [
-                  const Text("Bubble Tea Shop", style: TextStyle(fontSize: 20)),
+                  const Text("Blue Frontier Flutter Boilerplate", style: TextStyle(fontSize: 20)),
                   const SizedBox(height: 10),
                   Expanded(
                       child: ListView.builder(

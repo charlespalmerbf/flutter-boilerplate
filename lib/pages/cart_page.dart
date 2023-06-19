@@ -1,6 +1,6 @@
-import 'package:bubble_tea/components/drink_tile.dart';
-import 'package:bubble_tea/models/drink.dart';
-import 'package:bubble_tea/models/shop.dart';
+import 'package:bluefrontier_flutter_boilerplate/components/drink_tile.dart';
+import 'package:bluefrontier_flutter_boilerplate/models/drink.dart';
+import 'package:bluefrontier_flutter_boilerplate/models/shop.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

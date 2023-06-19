@@ -1,6 +1,6 @@
-import 'package:bubble_tea/models/shop.dart';
-import 'package:bubble_tea/pages/auth_page.dart';
-import 'package:bubble_tea/pages/home_page.dart';
+import 'package:bluefrontier_flutter_boilerplate/models/shop.dart';
+import 'package:bluefrontier_flutter_boilerplate/pages/auth_page.dart';
+import 'package:bluefrontier_flutter_boilerplate/pages/home_page.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';

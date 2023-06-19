@@ -1,4 +1,4 @@
-package com.example.bubble_tea
+package com.example.bluefrontier_flutter_boilerplate
 
 import io.flutter.embedding.android.FlutterActivity
 

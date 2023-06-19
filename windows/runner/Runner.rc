@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "bubble_tea" "\0"
+            VALUE "FileDescription", "bluefrontier_flutter_boilerplate" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "bubble_tea" "\0"
+            VALUE "InternalName", "bluefrontier_flutter_boilerplate" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2023 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "bubble_tea.exe" "\0"
-            VALUE "ProductName", "bubble_tea" "\0"
+            VALUE "OriginalFilename", "bluefrontier_flutter_boilerplate.exe" "\0"
+            VALUE "ProductName", "bluefrontier_flutter_boilerplate" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
